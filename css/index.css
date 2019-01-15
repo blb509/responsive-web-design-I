@@ -122,7 +122,30 @@ header {
 }
             
  @media(max-width: 500px) {
-            
+
+	header nav {
+		flex-direction: column;
+		align-content: flex-start;
+		margin-left: 0px;
+	}
+
+	header .logo {
+		margin-top: 25px;
+        width: 20%;
+        margin-left: 18%;
+	}
+	
+	header nav a {
+		font-size: 20px;
+		color: gray;
+		text-decoration: none;
+		width: 470px;
+		height: 60px;
+		border: 1px solid black;
+		text-align: center;
+		padding-top: 20px;
+		
+	  }
  }    
 
 /* cta */
@@ -183,7 +206,12 @@ header {
 }
 
 @media(max-width: 500px) {
-   
+    .cta .cta-text {
+    	margin-top: 45px;
+        margin-left: 3%;
+
+	}
+
 } 
 
 	
@@ -232,6 +260,7 @@ header {
 		@media(max-width: 800px) {
 			.main-content {
 				width: 780px
+				flex-direction: column;
 			}
 
 			.main-content .top-content {
@@ -240,6 +269,7 @@ header {
 
 			}
 
+			
 			.main-content .bottom-content {
 				width: 780px
 			}
@@ -252,13 +282,39 @@ header {
 		}    
 
 		@media(max-width: 500px) {
+			
+
+
+			.main-content {
+				width: 470px
+				flex
+			}
+
+			.main-content .top-content {
+				justify-content: space-evenly;
+				width: 470px
+
+			}
+
+			.main-content .top-content .text-content  {
+				width: 470px;
+				margin-right: 0px;
+			}
+
+			.main-content .bottom-content {
+				width: 470px
+			}
+
+			.main-content .middle-img {
+				width: 100%;
+			}
             
 		}    
 
 
 
 
-		.contact {
+  .contact {
 	margin-top: 57px;
 	border-top: 1px solid black;
 	padding: 39px 10px 0;
