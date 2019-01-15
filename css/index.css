@@ -197,7 +197,8 @@ header {
 
 .main-content .top-content {
 		padding: 0 10px;
-        display: flex;
+		display: flex;
+		
 		}
 		
 		.main-content .top-content .text-content {
@@ -227,6 +228,35 @@ header {
 		.main-content .bottom-content .text-content:last-child {
 		margin-right: 0;
 		}
+
+		@media(max-width: 800px) {
+			.main-content {
+				width: 780px
+			}
+
+			.main-content .top-content {
+				justify-content: space-evenly;
+				width: 780px
+
+			}
+
+			.main-content .bottom-content {
+				width: 780px
+			}
+
+			.main-content .middle-img {
+				width: 100%;
+			}
+
+
+		}    
+
+		@media(max-width: 500px) {
+            
+		}    
+
+
+
 
 		.contact {
 	margin-top: 57px;
